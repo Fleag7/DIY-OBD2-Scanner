@@ -82,7 +82,6 @@ Code is a personal project, built iteratively — functional and reasonably comm
 - Spark-ignition (gasoline) monitor decoding only — compression-ignition (diesel) uses a different monitor set not implemented here
 - PID table covers ~35 commonly-supported PIDs with linear scaling formulas; bitmask/status-type PIDs (fuel system status, O2 sensor presence maps, etc.) are intentionally not decoded
 - No ABS/manufacturer-specific module access — standard OBD2 (SAE J1979) only
-- Rotary encoder input is glitchy — no debounce logic currently implemented, so occasional missed or double-counted steps happen. Functional enough to navigate the menu, but not perfectly reliable. Likely fix is software or hardware debouncing on the CLK/DT lines.
 
 ## License
 
